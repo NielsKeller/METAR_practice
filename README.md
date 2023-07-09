@@ -9,29 +9,29 @@ Install the following packages:
 ### lxml 
 This package is used to parse wiki table for airports list.
 
-        pip install lxml
+    pip install lxml
 
 or
 
-        conda install lxml
+    conda install lxml
 
 
 ### Beautiful Soup 
 This package processes html
-        pip install beautifulsoup4
+    pip install beautifulsoup4
 
 or
 
-        conda install beautifulsoup4
+    conda install beautifulsoup4
 
 
 ### Requests
 This package is used to get the html requests.
-        pip install requests
+    pip install requests
 
 or
 
-        conda install requests
+    conda install requests
 
 
 Then simply run main.py
