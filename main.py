@@ -92,6 +92,26 @@ def scrape_FFA_codes():
 #WIP end ------------------------------------------------------------------
 
 
+
+def link(uri, label=None):
+
+    """
+    Makes link clickable, is taken from https://stackoverflow.com/a/71309268
+    """
+
+    if label is None: 
+        label = uri
+    parameters = ''
+
+    # OSC 8 ; params ; URI ST <name> OSC 8 ;; ST 
+    escape_mask = '\033]8;{};{}\033\\{}\033]8;;\033\\'
+
+    return escape_mask.format(parameters, uri, label)
+
+
+
+
+
 def main():
     codes = scrape_FFA_codes()
     keep_going = True
@@ -103,8 +123,8 @@ def main():
 
         metar = scrape_metar(code)
 
-        print(metar + "\n\n\nDecoded: https://e6bx.com/weather/"+code+"/?showDecoded=1&focuspoint=metardecoder\n\n\n\n")
-                
+        print(metar + "\n\n\nDecoded:"+link("https://e6bx.com/weather/"+code+"/?showDecoded=1&focuspoint=metardecoder")+"\n\n\n\n")
+        
         #Should the program keep going?
         user_input = input("Press enter to continue or type exit to exit: ")
         if user_input.lower() == "exit":
