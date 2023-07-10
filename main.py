@@ -123,7 +123,7 @@ def main():
 
         metar = scrape_metar(code)
 
-        print(metar + "\n\n\nDecoded:"+link("https://e6bx.com/weather/"+code+"/?showDecoded=1&focuspoint=metardecoder")+"\n\n\n\n")
+        print(metar + "\n\n\nDecoded: "+link("https://e6bx.com/weather/"+code+"/?showDecoded=1&focuspoint=metardecoder")+"\n\n\n\n")
         
         #Should the program keep going?
         user_input = input("Press enter to continue or type exit to exit: ")
