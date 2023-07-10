@@ -1,8 +1,7 @@
 # METAR Practice
 
 ## About
-I wrote this program while studying for my Private Pilot’s License  Checkride. The program scrapes METAR data from https://www.aviationweather.gov/ and decodes it for the user to practice.
-
+I wrote this program while studying for my Private Pilot’s License  Checkride. The program scrapes METAR data from https://www.aviationweather.gov/. It gives the user a "random" airports current metar to practice on
 
 
 
